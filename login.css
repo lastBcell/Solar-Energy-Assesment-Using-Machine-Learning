@@ -18,13 +18,32 @@ body{
     background-size: cover;
     background-position: center;
 }
+.top{
+   position: fixed;
+   top: 4px;
+   
+   color: white;
+   font-size: 3.5em;
+   font-weight: 700;
+   
+   
+}
+span{
+color: rgb(12, 141, 216);
+/* background-color: white ; */
+padding: 2px;
+border-radius: 3px;
+text-shadow: 2rem;
+border: none;
 
+
+}
 .wrapper{
 
     position: relative;
     width: 400px;
     height: 440px;
-
+;
     border: none;
     border-radius: 20px;
     backdrop-filter: blur(3px);
@@ -41,8 +60,6 @@ body{
 .wrapper .form-box{
     width: 100%;
     padding: 40px;
-   
-   
 }
 
 
@@ -111,6 +128,8 @@ top: -4px;
 background-color: rgb(254, 255, 255);
 border-radius: 50%;
 transition: .3s;
+padding: 10px;
+
 
 }
 .date::-webkit-calendar-picker-indicator:hover{
