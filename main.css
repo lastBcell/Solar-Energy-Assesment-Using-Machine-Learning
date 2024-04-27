@@ -1,0 +1,155 @@
+
+@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html {
+	/* font-size: 10px; */
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+    background: url(img/solar3.jpg) no-repeat; 
+    backdrop-filter: brightness(-80%);
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+.section-title{
+    position: fixed;
+    top: 2px;
+   left: 26%;
+  
+   
+    letter-spacing: 3px;
+    color: rgb(255, 255, 255);
+    font-size: 3.5em;
+    font-weight: 700;
+    
+    
+ }
+ span{
+ color: rgb(12, 141, 216);
+ /* background-color: white ; */
+ padding: 2px;
+ border-radius: 3px;
+ text-shadow: 2rem;
+ border: none;
+ margin-right: 17px;
+ 
+ 
+ }
+
+
+
+/* contact Section */
+#contact .contact {
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+	width: 90%;
+   
+}
+  
+
+   
+  
+#contact .contact-items {
+	/* max-width: 400px; */
+	width: 100%;
+    
+}
+#contact .contact-item {
+	width: 80%;
+    font-size: 10px;
+	padding: 20px;
+	text-align: center;
+	border-radius: 10px;
+	padding: 30px;
+	margin: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	box-shadow: 0px 0px 10px 0 #0000002c;
+	transition: 0.3s box-shadow;
+	
+	
+
+}
+.colon{
+    font-size: 2em;
+    color: rgb(12, 141, 216);
+    font-weight: 700;
+    margin-left: 15px;
+}
+#contact .contact-item h2{
+/* transform: translateY(-80px); */
+color: rgb(12, 141, 216);
+font-size: 2em;
+text-align: left;
+
+
+}
+
+
+#contact .contact-item:hover {
+	box-shadow: 0px 0px 10px 0 rgb(12, 141, 216);
+	
+	
+}
+
+#contact .contact-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+	margin-bottom: 5px;
+}
+#contact .contact-info h2 {
+	font-size: 1.3rem;
+	line-height: 2rem;
+	font-weight: 500;
+  
+}
+/*End contact Section */
+
+	/* contact  */
+	#contact .contact {
+		flex-direction: column;
+		padding: 100px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+        background-color: white;
+	}
+	
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+       
+	}
+
+

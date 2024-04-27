@@ -20,8 +20,9 @@ body{
 }
 .top{
    position: fixed;
-   top: 4px;
-   
+   top: 2px;
+   left:auto;
+   letter-spacing: 3px;
    color: white;
    font-size: 3.5em;
    font-weight: 700;
