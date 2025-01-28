@@ -1,4 +1,15 @@
 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+  <title>Solar Energy Forcasting</title>
+  <style>
+    
 @import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
 * {
 	padding: 0;
@@ -16,6 +27,18 @@ html {
 
 
 }
+body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: "{{url_for('static',filename='solar3.jpg')}}"no repeat;
+        backdrop-filter: brightness(80%);
+    
+        background-size: cover;
+        background-position: center;
+    }
+    
 
 .container {
 	min-height: 100vh;
@@ -152,5 +175,47 @@ text-align: left;
 		padding-left: 20px;
        
 	}
+  </style>
+</head>
+
+<body background="{{url_for('static',filename='solar3.jpg')}}",background=no-repeat></body>
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h2 class="section-title">Solar <span>Energy</span>Forcasting</h2>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item"> 
+            <h2>Total Average Radiation (kW/m<sup>2</sup>)</h2> 
+            <span class="colon">:</span> 
+
+          <div class="contact-info">
+            <h1>{{s}}</h1>
+           
+          </div>
+        </div>
+        <div class="contact-item"> 
+            <h2>Average Radiation(kW/m<sup>2</sup>)</h2>  
+            <span class="colon">:</span>      
+          <div class="contact-info">
+            <h1>{{a}}</h1>
+           
+          </div>
+        </div>
+        <div class="contact-item">
+            <h2>Electricity Generated (kW)</h2>
+            <span class="colon">:</span>      
+          <div class="contact-info">
+            <h1>{{tl}}</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
+  </script>
+  
+</body>
+
+</html>
